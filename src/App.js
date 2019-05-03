@@ -2,13 +2,6 @@ import React, { Component } from "react";
 import SideNav from "./components/SideNav";
 import "./App.css";
 
-// const getData = url => {
-//   fetch(url)
-//     .then(data => data.json())
-//     .then(json => console.log(json))
-//     .catch(error => console.error(error));
-// };
-
 class App extends Component {
   state = {
     todos: ""
@@ -32,7 +25,6 @@ class App extends Component {
     return (
       <div className="App">
         <SideNav />
-
         <div className="main">
           <h2>About me</h2>
           <p>My name is Matt Brannon. I build stuff.</p>
