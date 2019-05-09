@@ -2,15 +2,6 @@ import React, { Component } from "react";
 import SideNav from "./components/SideNav";
 import "./App.css";
 
-function createPlayer(name, score) {
-  var player = {};
-  player.name = name;
-  player.score = score;
-  player.increment = function() {
-    this.score++;
-  };
-}
-
 class App extends Component {
   render() {
     return (
