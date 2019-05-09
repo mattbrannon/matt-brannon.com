@@ -58,6 +58,17 @@ img {
   border-radius: 50%;
 }
 
+p {
+  text-align: left;
+  padding: 10px;
+}
+
+.snippet {
+  font-size: 20px;
+  background-color: lightgrey;
+  margin: 40px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
