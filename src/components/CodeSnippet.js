@@ -3,7 +3,7 @@ import React from "react";
 const CodeSnippet = () => {
   return (
     <>
-      <h3>Function Instantiation</h3>
+      <h3>Functional Instantiation</h3>
       <code>
         <pre>
           <p className="snippet">
