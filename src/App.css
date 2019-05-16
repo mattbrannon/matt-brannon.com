@@ -59,7 +59,7 @@ img {
 }
 
 p {
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
 
@@ -67,6 +67,10 @@ p {
   font-size: 20px;
   background-color: lightgrey;
   margin: 40px;
+}
+
+.small-text {
+  font-size: 12px;
 }
 
 @media screen and (max-height: 450px) {

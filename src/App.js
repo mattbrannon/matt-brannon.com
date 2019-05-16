@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import SideNav from "./components/SideNav";
-import CodeSnippet from "./components/CodeSnippet";
+//import CodeSnippet from "./components/CodeSnippet";
 
 import "./App.css";
 
@@ -12,8 +12,10 @@ class App extends Component {
         <div className="main">
           <h2>About me</h2>
           <p>My name is Matt Brannon. I build stuff.</p>
-          <h2>Instantiation patterns</h2>
-          <CodeSnippet />
+          <p>This site is still a work in progress.</p>
+          <p className="small-text">More to come</p>
+          {/* <h2>Instantiation patterns</h2>
+          <CodeSnippet /> */}
         </div>
       </div>
     );
