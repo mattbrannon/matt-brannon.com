@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SideNav from "./components/SideNav";
-import { Router, Link } from "@reach/router";
+// import SideNav from "./components/SideNav";
+// import { Router, Link } from "@reach/router";
 
 //import CodeSnippet from "./components/CodeSnippet";
 
@@ -9,16 +9,16 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <SideNav />
-
-        <div className="main">
-          <h2>About me</h2>
-          <p>My name is Matt Brannon. I build stuff.</p>
-          <p>This site is still a work in progress.</p>
-          <p className="small-text">More to come</p>
-          {/* <h2>Instantiation patterns</h2>
-          <CodeSnippet /> */}
+      <div className="container">
+        <div className="header">
+          header goes here
+          <nav>
+            <ul>
+              <li className="link"><a href="https://github.com/ghostrib">github</a></li>
+              <li className="link"><a href="https://ghostrib.com/">the other side</a></li>
+              <li className="link"><a href=""></a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     );
