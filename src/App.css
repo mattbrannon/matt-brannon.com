@@ -12,7 +12,7 @@
   height: 100%;
   width: 94%;
   display: grid;
-  grid-template-columns: 1fr 5fr 5fr;
+  grid-template-columns: 1fr 5.5fr 5.5fr;
   align-items: center;
   gap: 1em;
 }
@@ -20,6 +20,7 @@
 img {
   height: 100%;
   border-radius: 100%;
+  /* align-self: center; */
   /* justify-self: baseline; */
 }
 
@@ -92,4 +93,42 @@ nav div a {
 
 #card-e {
   grid-area: e;
+}
+
+@media (max-width: 800px) {
+  .header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    background: #202020;
+    margin-bottom: 1em;
+  }
+  .inner-header {
+    height: 100%;
+    width: 94%;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 1em;
+
+    grid-template-areas:
+      'logo logo image'
+      'nav nav nav';
+  }
+
+  .logo-container {
+    grid-area: logo;
+  }
+  .profile-pic {
+    grid-area: image;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  img {
+    margin-top: 1em;
+  }
 }

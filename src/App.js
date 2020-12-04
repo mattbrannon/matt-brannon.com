@@ -9,7 +9,7 @@ class App extends Component {
       <div className="container">
         <div className="header">
           <div className="inner-header">
-            <img src={image} alt="" />
+            <img className="profile-pic" src={image} alt="" />
             <div className="logo-container">
               <h1>
                 Matt <span>Brannon</span>
@@ -33,7 +33,11 @@ class App extends Component {
 
         <div className="main">
           <div id="card-a" className="card">
-            card1
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non inventore ducimus, nobis beatae exercitationem
+            cum quod delectus libero cupiditate earum veniam quasi laborum repellat at incidunt, quo quae assumenda
+            aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel, saepe harum culpa aliquam
+            deleniti cum possimus architecto voluptas sit! Recusandae ipsam dicta delectus perspiciatis, incidunt quae
+            ea iste? Mollitia.
           </div>
           <div id="card-b" className="card">
             card2
