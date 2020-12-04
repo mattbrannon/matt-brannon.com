@@ -1,92 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #202020;
+  margin-bottom: 1em;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.sidenav {
+.inner-header {
+  /* background: red; */
   height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 6px 6px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  width: 94%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr;
+  align-items: center;
+  gap: 1em;
 }
 
 img {
-  object-fit: cover;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  height: 100%;
+  border-radius: 100%;
+  /* justify-self: baseline; */
 }
 
-p {
-  text-align: center;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+
+.link {
+  margin: 0 1em;
+}
+
+nav div a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo-container h1 {
+  font-weight: 300;
+  color: white;
+}
+
+.logo-container h1 span {
+  font-weight: 900;
+  color: white;
+}
+
+.main {
+  display: grid;
+  /* grid-templeate */
+  /* grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); */
+  /* grid-auto-rows: 200px; */
+  gap: 2em;
+  margin: 1em;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  grid-auto-rows: minmax(200px, 1fr);
+  grid-template-areas:
+    'a a a b b'
+    'c c d d d'
+    'e e e e e';
+}
+
+.card {
+  background: #e4e4e4;
+  border-radius: 8px;
   padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  transition: all 0.5s ease;
 }
 
-.snippet {
-  font-size: 20px;
-  background-color: lightgrey;
-  margin: 40px;
+#card-a {
+  grid-area: a;
+  /* grid- */
 }
 
-.small-text {
-  font-size: 12px;
+#card-b {
+  grid-area: b;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+#card-c {
+  grid-area: c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#card-d {
+  grid-area: d;
+}
+
+#card-e {
+  grid-area: e;
 }
