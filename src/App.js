@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import image from './images/matt2.png';
+// import ghost from './images/ghost-pixel-art.svg';
 
 class App extends Component {
   render() {
