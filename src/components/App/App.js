@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import image from './images/matt2.png';
+import image from '../../images/matt2.png';
 // import ghost from './images/ghost-pixel-art.svg';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      numberOfCards: 5,
+    };
+  }
   render() {
     return (
       <div className="container">
@@ -25,7 +31,7 @@ class App extends Component {
               </div>
               <div className="link">
                 <a href="mailto:mattbrannon.dev@gmail.com" target="_top">
-                  contact me
+                  contact
                 </a>
               </div>
             </nav>
