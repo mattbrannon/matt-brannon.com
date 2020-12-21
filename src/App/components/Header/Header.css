@@ -1,0 +1,140 @@
+* {
+  transition: all 0.2 ease-in;
+}
+
+:root {
+  --height: 65px;
+  --view-width: 100vw;
+  --background: #383838;
+  --color: white;
+  --largest: 38px;
+  --large: 34px;
+  --medium: 28px;
+  --small: 22px;
+  --smallest: 18px;
+  --font: Montserrat;
+}
+
+.header {
+  height: var(--height);
+  width: var(--view-width);
+  background: var(--background);
+}
+
+/* img {
+  max-height: calc(var(--height) * 0.75);
+  border-radius: 100%;
+  margin-right: 20px;
+} */
+
+.inner {
+  /* background: rgba(233, 0, 0, 0.3); */
+  display: grid;
+  grid-template-columns: 1fr 4fr 4fr;
+  align-items: center;
+  width: calc(100vw * 0.9); /* 90% */
+  height: var(--height);
+  margin: auto;
+}
+
+/* .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.link {
+  color: var(--color);
+  font-family: var(--font);
+  margin: 0 0 0 25px;
+} */
+
+/* h1 {
+  display: inline;
+  font-family: 'Montserrat';
+  font-size: var(--medium);
+  font-weight: 400;
+  color: var(--color);
+  text-shadow: 1px 0 1px #202020, 0 0 2px #585858;
+  transition: all 0.2s ease;
+}
+
+span {
+  font-family: 'Montserrat';
+  font-size: var(--medium);
+  font-weight: 500;
+  transition: all 0.2s ease;
+} */
+
+@media (max-width: 768px) {
+  .inner {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* grid-template-columns: 1fr 6fr 0.5fr; */
+    /* width: 100vw; */
+  }
+}
+
+@media (max-width: 600px) {
+  /* h1 {
+    font-size: 22px;
+  }
+  span {
+    font-size: 26px;
+  }
+  img {
+    width: 65px;
+  } */
+}
+/* @media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+  span {
+    font-size: 22px;
+  }
+  img {
+    width: 50px;
+  }
+} */
+/* 
+@media (max-width: 380px) {
+  h1,
+  span {
+    font-size: 26px;
+  }
+  img {
+    max-height: calc(var(--height) * 0.6);
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1,
+  span {
+    font-size: var(--small);
+  }
+}
+
+@media (max-width: 280px) {
+  img {
+    max-height: calc(var(--height) * 0.5);
+    margin-right: 5px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 279px) {
+  h1,
+  span {
+    font-size: calc(var(--smallest) * 0.8);
+  }
+} */
