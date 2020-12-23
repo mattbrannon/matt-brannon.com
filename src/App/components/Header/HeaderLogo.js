@@ -1,10 +1,8 @@
-import image from '../../../images/Matt.png';
-import './Title.css';
-const Title = () => {
+const HeaderLogo = () => {
   return (
     <>
       <div className="image">
-        <img src={image} alt="" />
+        <img src={require("../../../images/Matt.png")} alt="Matt Brannon" />
       </div>
       <h1 className="title">
         matt <span>Brannon</span>
@@ -13,4 +11,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default HeaderLogo;

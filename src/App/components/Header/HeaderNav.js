@@ -1,6 +1,3 @@
-import './Nav.css';
-// import Hamburger from '../Hamburger/Hamburger';
-
 const Nav = () => {
   return (
     <div className="nav">
