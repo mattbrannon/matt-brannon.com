@@ -4,8 +4,15 @@ import React, { Component } from "react";
 // import Hamburger from './components/Hamburger/Hamburger';
 // import Title from './components/Title/Title';
 // import Nav from './components/Nav/Nav';
-// import { Router, Link } from '@reach/router';
-import image from "../images/Matt.png";
+import { Router } from "@reach/router";
+import image from "../images/Matt.svg";
+
+import Blog from "./components/Blog/Blog";
+import Footer from "./components/Footer/Footer";
+import Nav from "./components/Nav/Nav";
+import Burger from "./components/Burger/Burger";
+import HeaderLogo from "./components/HeaderLogo/HeaderLogo";
+import Home from "./components/Home/Home";
 
 import "./App.css";
 
@@ -52,137 +59,23 @@ class App extends Component {
         <div className="container">
           <header className="header">
             <div className="header header__wrapper">
-              <div className="header header__logo">
-                <img
-                  src={image}
-                  alt=""
-                  className="header__logo header__image"
-                />
-                <h3 className="header__logo header__title">Matt Brannon</h3>
-              </div>
-              <div
-                onClick={this.toggleMenu}
-                className={
-                  this.state.isOpen
-                    ? "header header__burger header__burger-active"
-                    : "header header__burger header__burger-inactive"
-                }
-              >
-                <div className="header__burger burger__line" id="line1"></div>
-                <div className="header__burger burger__line" id="line2"></div>
-                <div className="header__burger burger__line" id="line3"></div>
-              </div>
+              <HeaderLogo image={image} />
+              <Burger toggleMenu={this.toggleMenu} isOpen={this.state.isOpen} />
             </div>
-            <nav
-              className={
-                this.state.isOpen
-                  ? "header header__nav nav__open"
-                  : "header header__nav nav__closed"
-              }
-            >
-              <a href="#" className="header__nav nav__item">
-                Home
-              </a>
-              <a href="#" className="header__nav nav__item">
-                Blog
-              </a>
-              <a href="#" className="header__nav nav__item">
-                Apps
-              </a>
-              <a href="#" className="header__nav nav__item">
-                Music
-              </a>
-              <a href="#" className="header__nav nav__item">
-                Contact
-              </a>
-            </nav>
+            <Nav isOpen={this.state.isOpen} toggleMenu={this.toggleMenu} />
           </header>
-          <main>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              recusandae voluptas iure aliquid at quod sequi soluta
-              necessitatibus ipsum, laborum accusantium ratione nemo vero.
-              Pariatur dicta adipisci quia vel neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam sed aut illo expedita
-              laboriosam quibusdam rem veritatis quaerat consectetur vero
-              praesentium cupiditate ab eaque, voluptatum quo? Aut laudantium
-              veritatis optio. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Tenetur reiciendis voluptatibus magni dolorum
-              harum. Eligendi sapiente aut amet eveniet ratione labore! Maxime
-              blanditiis eius nihil, unde ratione modi voluptatum magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              recusandae voluptas iure aliquid at quod sequi soluta
-              necessitatibus ipsum, laborum accusantium ratione nemo vero.
-              Pariatur dicta adipisci quia vel neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam sed aut illo expedita
-              laboriosam quibusdam rem veritatis quaerat consectetur vero
-              praesentium cupiditate ab eaque, voluptatum quo? Aut laudantium
-              veritatis optio. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Tenetur reiciendis voluptatibus magni dolorum
-              harum. Eligendi sapiente aut amet eveniet ratione labore! Maxime
-              blanditiis eius nihil, unde ratione modi voluptatum magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              recusandae voluptas iure aliquid at quod sequi soluta
-              necessitatibus ipsum, laborum accusantium ratione nemo vero.
-              Pariatur dicta adipisci quia vel neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam sed aut illo expedita
-              laboriosam quibusdam rem veritatis quaerat consectetur vero
-              praesentium cupiditate ab eaque, voluptatum quo? Aut laudantium
-              veritatis optio. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Tenetur reiciendis voluptatibus magni dolorum
-              harum. Eligendi sapiente aut amet eveniet ratione labore! Maxime
-              blanditiis eius nihil, unde ratione modi voluptatum magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              recusandae voluptas iure aliquid at quod sequi soluta
-              necessitatibus ipsum, laborum accusantium ratione nemo vero.
-              Pariatur dicta adipisci quia vel neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam sed aut illo expedita
-              laboriosam quibusdam rem veritatis quaerat consectetur vero
-              praesentium cupiditate ab eaque, voluptatum quo? Aut laudantium
-              veritatis optio. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Tenetur reiciendis voluptatibus magni dolorum
-              harum. Eligendi sapiente aut amet eveniet ratione labore! Maxime
-              blanditiis eius nihil, unde ratione modi voluptatum magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              recusandae voluptas iure aliquid at quod sequi soluta
-              necessitatibus ipsum, laborum accusantium ratione nemo vero.
-              Pariatur dicta adipisci quia vel neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam sed aut illo expedita
-              laboriosam quibusdam rem veritatis quaerat consectetur vero
-              praesentium cupiditate ab eaque, voluptatum quo? Aut laudantium
-              veritatis optio. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Tenetur reiciendis voluptatibus magni dolorum
-              harum. Eligendi sapiente aut amet eveniet ratione labore! Maxime
-              blanditiis eius nihil, unde ratione modi voluptatum magni.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              recusandae voluptas iure aliquid at quod sequi soluta
-              necessitatibus ipsum, laborum accusantium ratione nemo vero.
-              Pariatur dicta adipisci quia vel neque! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Aliquam sed aut illo expedita
-              laboriosam quibusdam rem veritatis quaerat consectetur vero
-              praesentium cupiditate ab eaque, voluptatum quo? Aut laudantium
-              veritatis optio. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Tenetur reiciendis voluptatibus magni dolorum
-              harum. Eligendi sapiente aut amet eveniet ratione labore! Maxime
-              blanditiis eius nihil, unde ratione modi voluptatum magni.
-            </p>
+
+          <main tabIndex="0">
+            <Router>
+              <Home path="/" />
+              <Blog path="blog" />
+
+              {/* <Demos path="apps" apps={["app1", "app2", "app3", "app4"]} /> */}
+              {/* <Player path="music" /> */}
+            </Router>
           </main>
-          <footer>
-            <a href="">link</a>
-            <a href="">link</a>
-            <a href="">link</a>
-            <a href="">link</a>
-          </footer>
+
+          <Footer />
         </div>
       </div>
     );
